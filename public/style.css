@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #293264;
+    gap: 1em;
+    height: 100vh;
+    font-size: 1.5em;
+}
+
+#title{
+    letter-spacing: .1em;
+}
+
+h4{
+    font-weight: lighter;
+}
+
+.start-quiz{
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    font-size: 1.3em;
+    padding: .7em 3em;
+    border: black 1.5px solid;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px .5px gainsboro;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.start-quiz:hover{
+    padding: .8em 3.1em;
+    font-size: 1.5em;
+    transition: 0.22s all ease
+}
+
+.start-quiz:active{
+    font-size: 1.3em;
+    padding: .7em 3em;
+    transition: 0.10s all ease
+}
+
+.quiz-questions{
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    margin: 3em 2em 3em 1em;
+    padding-bottom: .5em;
+    border-bottom: #DBDEF0 2px solid;
+    width: 75vw;
+    color: #293264;
+}
+
+.quiz-answers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #293264;
+    margin-bottom: 1em;
+}
+
+.wrong{
+    background-color: #F8BCBC;
+    color: #5c5f74;
+    border: #F8BCBC 1.5px solid;
+    transition: 0.25s all ease
+}
+
+.correct{
+    background-color: #94D7A2 ;
+    border: #94D7A2 1.5px solid;
+    transition: 0.25s all ease
+}
+
+.selected{
+    background-color: #D6DBF5 ;
+    border: #D6DBF5 1.5px solid;
+    transition: 0.25s all ease
+  }
+
+p{
+    border: #293264 1.5px solid;
+    border-radius: 10px;
+    padding: .4em 2em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+
+
+.final-btn{
+    background: #4D5B9E;
+    border-radius: 10px;
+    color: #F5F7FB;
+    border: none;
+    font-size: 1.1em;
+    padding: .9em 2.2em;
+    margin-bottom: 2.5em;
+    cursor: pointer;
+}
+
+.final-btn:hover{
+    padding: 1em 2.3em;
+    font-size: 1.3em;
+    transition: 0.22s all ease
+}
+
+.final-btn:active{
+    font-size: 1.1em;
+    padding: .9em 2.2em;
+    transition: 0.10s all ease
+}
